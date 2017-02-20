@@ -5,7 +5,7 @@
 
 	<groupId>com.poc.springboot</groupId>
 	<artifactId>Employee_Details</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>employee_details</name>
