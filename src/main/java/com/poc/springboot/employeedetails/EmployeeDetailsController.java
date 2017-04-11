@@ -16,7 +16,7 @@ public class EmployeeDetailsController {
     }
 
 	@RequestMapping(value = "/employees/{employeeId}", method = RequestMethod.GET)
-	public Employee getEmployeeDetails(@PathVariable ("employeeId") Integer employeeId){
+	public Employee getEmployeeDetails(@PathVariable ("employeeId") String employeeId){
 		Employee emp = new Employee();
 		emp = EmployeeSource.getEmployee(employeeId);
         return emp;
