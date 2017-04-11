@@ -31,7 +31,7 @@ public class EmployeeSource {
         return EMPLOYEES.values();
     }
     
-    public static Employee getEmployee(long empId) {
+    public static Employee getEmployee(Integer empId) {
         return EMPLOYEES.get(empId);
     }
 }
