@@ -5,20 +5,20 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class EmployeeSource {
-    private static final Map<String, Employee> EMPLOYEES = new HashMap<>();
+    private static final Map<Integer, Employee> EMPLOYEES = new HashMap<>();
     static {
         Employee emp1 = new Employee();
-        emp1.setId("01");
+        emp1.setId(1);
         emp1.setName("Joe");
         emp1.setAge(32);
         
         Employee emp2 = new Employee();
-        emp2.setId("02");
+        emp2.setId(2);
         emp2.setName("Sam");
         emp2.setAge(41);
         
         Employee emp3 = new Employee();
-        emp3.setId("03");
+        emp3.setId(3);
         emp3.setName("Phil");
         emp3.setAge(22);
         
@@ -31,7 +31,7 @@ public class EmployeeSource {
         return EMPLOYEES.values();
     }
     
-    public static Employee getEmployee(String empId) {
+    public static Employee getEmployee(Integer empId) {
         return EMPLOYEES.get(empId);
     }
 }
